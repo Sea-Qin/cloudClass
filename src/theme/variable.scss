@@ -24,6 +24,12 @@ $--color-danger: #F56C6C !default;
 /// color|1|Functional Color|1
 $--color-info: #909399 !default;
 
+//主题色调
+$--color-logo: cadetblue !default;
+$--color-bgc: rgb(202, 207, 205) !default;
+$--color-word: rgb(16, 55, 56) !default;
+
+
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
 $--color-danger-light: mix($--color-white, $--color-danger, 80%) !default;
@@ -62,3 +68,4 @@ $--gutter-content: 24px;
 $--gutter-paragraph: 16px;
 // 行内间距
 $--gutter-line: 8px;
+
