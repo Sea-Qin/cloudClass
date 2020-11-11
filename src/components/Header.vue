@@ -39,6 +39,7 @@ export default {
   float: left;
   margin-left: 6px;
   font-size: 0.09rem;
+  text-shadow: 0px 6px 1px #83ACDB;
 }
 .logo {
   height: 15px;
