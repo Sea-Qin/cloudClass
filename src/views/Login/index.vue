@@ -28,6 +28,8 @@
               <el-input
                 v-model="logiForm.password"
                 prefix-icon="el-icon-lock"
+                show-password
+                type="password"
                 class="form-item"
                 size="mini"
                 placeholder="请输入你的密码"></el-input>
@@ -62,6 +64,8 @@
               <el-input
                 v-model="regiForm.password"
                 prefix-icon="el-icon-lock"
+                type="password"
+                show-password
                 class="form-item"
                 size="mini"
                 placeholder="请输入6到15个字符的密码"></el-input>
@@ -186,6 +190,7 @@ height: 34px;
 }
 .el-input__inner {
   font-size: 0.08rem;
+  // height: 0.01rem;
   // padding: 2px;
 }
 #identify {
