@@ -7,88 +7,88 @@
     <!-- <div class="from"> -->
     <div class="card-wrapper">
       <el-card class="box-card" width=340>
-      <el-tabs v-model="activeName">
-        <el-tab-pane label="登录" name="login">
-          <!-- 登录表单-->
-          <el-form
-            :model="logiForm"
-            status-icon
-            :rules="rules"
-            ref="logiForm"
-            class="demo-ruleForm"
-          >
-            <el-form-item prop="name">
-              <el-input
-                v-model="logiForm.name"
-                prefix-icon="el-icon-user-solid"
-                class="form-item"
-                size="large"
-                placeholder="请输入你的账号昵称"></el-input>
-            </el-form-item>
-            <el-form-item prop="password">
-              <el-input
-                v-model="logiForm.password"
-                prefix-icon="el-icon-lock"
-                show-password
-                type="password"
-                class="form-item"
-                size="large"
-                placeholder="请输入你的密码"></el-input>
-            </el-form-item>
-            <el-form-item>
-              <el-button
-                @click="submitLogiForm('logiForm')"
-                type="primary"
-                class="handle-button login-btn"
-              >登录</el-button>
-            </el-form-item>
-            <p class="tips">若未注册账户，请先注册！</p>
-          </el-form>
-        </el-tab-pane>
-        <el-tab-pane label="注册" name="register">
-          <!-- 注册表单-->
-          <el-form
-            :model="regiForm"
-            status-icon
-            :rules="rules"
-            ref="regiForm"
-            class="demo-ruleForm"
-          >
-            <el-form-item prop="name">
-              <el-input
-                v-model="regiForm.name"
-                prefix-icon="el-icon-user-solid"
-                class="form-item"
-                size="large"
-                placeholder="请输入2到8个字符的昵称"></el-input>
-            </el-form-item>
-            <el-form-item prop="password">
-              <el-input
-                v-model="regiForm.password"
-                prefix-icon="el-icon-lock"
-                type="password"
-                show-password
-                class="form-item"
-                size="large"
-                placeholder="请输入6到15个字符的密码"></el-input>
-            </el-form-item>
-            <el-form-item prop="identify" id="identify">
-              <el-radio-group v-model="regiForm.identify">
-                <el-radio label="0">教师</el-radio>
-                <el-radio label="1">学生</el-radio>
-              </el-radio-group>
-            </el-form-item>
-            <el-form-item>
-              <el-button
-                @click="submitRegiForm('regiForm')"
-                type="success"
-                class="handle-button"
-              >注册</el-button>
-            </el-form-item>
-            <p class="tips">请注意确认你的账号身份！</p>
-          </el-form>
-        </el-tab-pane>
-      </el-tabs>
+        <el-tabs v-model="activeName">
+          <el-tab-pane label="登录" name="login">
+            <!-- 登录表单-->
+            <el-form
+              :model="logiForm"
+              status-icon
+              :rules="rules"
+              ref="logiForm"
+              class="demo-ruleForm"
+            >
+              <el-form-item prop="name">
+                <el-input
+                  v-model="logiForm.name"
+                  prefix-icon="el-icon-user-solid"
+                  class="form-item"
+                  size="large"
+                  placeholder="请输入你的账号昵称"></el-input>
+              </el-form-item>
+              <el-form-item prop="password">
+                <el-input
+                  v-model="logiForm.password"
+                  prefix-icon="el-icon-lock"
+                  show-password
+                  type="password"
+                  class="form-item"
+                  size="large"
+                  placeholder="请输入你的密码"></el-input>
+              </el-form-item>
+              <el-form-item>
+                <el-button
+                  @click="submitLogiForm('logiForm')"
+                  type="primary"
+                  class="handle-button login-btn"
+                >登录</el-button>
+              </el-form-item>
+              <p class="tips">若未注册账户，请先注册！</p>
+            </el-form>
+          </el-tab-pane>
+          <el-tab-pane label="注册" name="register">
+            <!-- 注册表单-->
+            <el-form
+              :model="regiForm"
+              status-icon
+              :rules="rules"
+              ref="regiForm"
+              class="demo-ruleForm"
+            >
+              <el-form-item prop="name">
+                <el-input
+                  v-model="regiForm.name"
+                  prefix-icon="el-icon-user-solid"
+                  class="form-item"
+                  size="large"
+                  placeholder="请输入2到8个字符的昵称"></el-input>
+              </el-form-item>
+              <el-form-item prop="password">
+                <el-input
+                  v-model="regiForm.password"
+                  prefix-icon="el-icon-lock"
+                  type="password"
+                  show-password
+                  class="form-item"
+                  size="large"
+                  placeholder="请输入6到15个字符的密码"></el-input>
+              </el-form-item>
+              <el-form-item prop="identify" id="identify">
+                <el-radio-group v-model="regiForm.identify">
+                  <el-radio label="0">教师</el-radio>
+                  <el-radio label="1">学生</el-radio>
+                </el-radio-group>
+              </el-form-item>
+              <el-form-item>
+                <el-button
+                  @click="submitRegiForm('regiForm')"
+                  type="success"
+                  class="handle-button"
+                >注册</el-button>
+              </el-form-item>
+              <p class="tips">请注意确认你的账号身份！</p>
+            </el-form>
+          </el-tab-pane>
+        </el-tabs>
       </el-card>
     </div>
   </div>
